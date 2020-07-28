@@ -1,0 +1,299 @@
+/* ----------------------------------------------------------- */
+/* || General */
+/* All common styling */
+/* ----------------------------------------------------------- */
+
+html {
+    font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-family: 'Knewave', cursive;
+    background-color: #646362;
+    box-sizing: border-box;
+}
+
+/* sets all other elements to inherit the box-sizing: border-box value. */
+*, *::before, *::after { 
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    /* gets rid of the gap at the top of the body */
+    margin: 30px 20px 10px 20px;
+    padding: 10px 0;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    background-color: #58CFED;
+    border: 1px solid #646362;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 20px;
+    padding: 20px 20px;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    background-color: #58CFED;
+    border: 1px solid #646362;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    left: 40px;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 1px;
+    width: 16%;
+    margin: 0 auto; /*sets the top and bottom margin to 0, and sets left and right to auto ---This same style applies to padding as well */
+    margin-top: 31px;
+    background-color: white;
+    border: 5px solid #D44C35; /* width, style color --> this sets the width to 5px, the style to solid (there are multiple) and the color to black */
+    border-radius: 10px;
+    height: 78.85%;
+}
+
+aside h1 {
+    font-size: 50px;
+}
+
+body {
+    width: 84%;
+    margin: 31px 160px 0px 0px; /*sets the top and bottom margin to 0, and sets left and right to auto ---This same style applies to padding as well */
+    background-color: white;
+    /* background-image: 
+        url("../images/moroccan-flower.png"); */
+    padding: 0 20px 20px 20px; /* sets top value to 0, 20px for the right, 20px for the bottom, and 20px for the left ---- if you have four values, it goes
+    top-> right-> bottom-> left */
+    border: 5px solid #D44C35; /* width, style color --> this sets the width to 5px, the style to solid (there are multiple) and the color to black */
+    border-radius: 10px;
+
+    height: 1580px;
+}
+
+img {
+    /* Because images are inline elements, in order to apply margin or spacing values on images
+    we must give the image block-level behavior using display: block;*/
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .75px;
+    padding: 0 20px;
+}
+
+/* ----------------------------------------------------------- */
+/* || SiteWide */
+/* Navigation bar on top and the footer section down below */
+/* ----------------------------------------------------------- */
+
+/* Nav Bar */
+
+.nav li {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: background-color .5s;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: #3F3F3F;
+}
+
+.nav li{
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    color: white;
+    position: fixed;
+    left: 20px;
+    top: 1px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.logo {
+    position: fixed;
+    left: 5px;
+    top: 1px;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 180px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.line {
+    border-top: .5px dotted rgb(255, 255, 255, 1);
+    margin-top: 20px;
+    width: 1925px;
+    position: relative;
+    right: 50px;
+}
+
+address p, address li, address a{
+    color: black;
+    font-size: 18px;
+    text-shadow: .45px .45px 1px white;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+address p {
+    padding-left: 70px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+address a {
+    text-decoration: underline;
+}
+
+address img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+address .git{
+    height: 60px;
+    width: 45px;
+    position: relative;
+    top: 24px;
+    margin-left: 10px;
+}
+
+address {
+    padding-bottom: 10px;
+}
+
+.pictures {
+    padding-top: 40px;
+}
+
+/* ----------------------------------------------------------- */
+/* || Pictures Tab */
+/* ----------------------------------------------------------- */
+
+
+.gigem {
+    width: 450px;
+}
+
+.gumbo {
+    width: 315px;
+}
+
+/* grabs a figcaption element that comes immediately after a gumbo class */
+.gumbo + figcaption {
+    text-align: left;
+}
+
+/* selects an image with a class that starts with an h */
+img[class^="h"] {
+    width: 700px;
+    height: 520px;
+}
+
+.gumbo, .gigem, .hilled, figure {
+    height: 400px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+figure, figcaption {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: .95em;
+}
+
+img[class="hilled"] {
+    width: 500px;
+    height: 400px;
+}
+
+/* ----------------------------------------------------------- */
+/* || Skills Section on About me Page */
+/* ----------------------------------------------------------- */
+
+.ge , .hob , .skills{
+    margin-right: 700px;
+    padding-right: 20px;
+}
+
+.ski img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.js {
+    margin-left: 20px;
+}
+
+/* ----------------------------------------------------------- */
+/* || Social Tab */
+/* ----------------------------------------------------------- */
+
+.references a {
+    text-decoration: underline;
+    color: black
+}
+
+.references img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+
+}
+
+.references .git{
+    height: 90px;
+    width: 70px;
+    position: relative;
+    top: 22px;
+    margin-left: 14px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Good idea to set the language for the document, helps with SEO and 
+people using screenreaders.-->
+<html lang="en-US">
+    <head>
+        <!-- Element specifies the document's character encoing -- the chara
+            cter set that the document is premitted to use. utf-8
+        is anuiversal character set that includes pretty much any character
+          from any human language.-->
+        <meta charset="utf-8">
+        <title>PL - Pictures</title>
+        <link href="styles/style.css" rel="stylesheet">
+
+        <!-- Links your page to a style sheet that loads the font family
+             to our webpage, this is for 
+            Knewave cursive, which is the same font as our favicon-->
+        <link href="https://fonts.googleapis.com/css2?family=Knewave&dis
+        play=swap" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="c:/favicon/pl-favicon-32x32.png" 
+        type="image/x-icon">
+
+        <!-- Meta-Author is useful to understand who wrote the page-->
+        <meta name="author" content="Pete Looney">
+        <!-- Meta Discription is useful b/c the keywords relating to content
+        as it has potential to appear higher in search engine results.-->
+        <meta name="description" content="The PL: About Me site provides 
+        pictures and general information about an aspiring web developer
+        /computer programmer named Pete Looney. This page specifically houses 
+        pictures of Pete and his family.">
+        <!-- The defer basically instructs the browser to load the JavaScript
+             at the same time as the page's html. This is useful as it makes 
+             sure that the HTML is all loaded before the Javascript runs.-->
+        <script src="/scripts/main.js" defer></script>
+
+    </head>
+    <body>
+        <nav>
+            <img src="c:/favicon/pl-favicon-32x32.png" alt="The small PL logo" class="logo">
+            <p>About Me</p>
+            <ul class="nav">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Pictures</h1> 
+        </header>
+        <figure>
+            <img src="images/hill-pic.jpg" alt="A picture of me being very cold on top of a hill in North Texas" title="North Texas Snow" class="hilled">
+            <figcaption>It gets cold in the panhandle of Texas</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gigem-pic.jpg" alt="A picture of me and my parents the day I got my aggie ring" title="Gig'em Aggies" class="gigem">
+            <figcaption>Ring Day with my parents</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gumbo.jpg" alt="A picture of my latest batch of chicken and sausage gumbo" title="Chicken and Sausage Gumbo!" class="gumbo">
+            <figcaption>My favorite dish to cook: Chicken and Sausage Gumbo</figcaption>
+        </figure>
+        <h3 class="pictures">Thanks for Visiting!</h3>
+        <footer>
+            <address>
+                <p>
+                    PL
+                    <a href="https://www.linkedin.com/in/peter-looney-27b732166/" target="_blank" title="Linked In"><img src="images/linked-in-2668700_640.png" alt="The Linked in logo"></a>
+                    <a href="https://github.com/plooney81" target="_blank" title="GitHub"><img src="images/github_PNG7.png " alt="The github logo" class="git"></a>
+                </p>
+                <ul>
+                    <li>Tel: 832-675-2598</li>
+                    <li>Email: <a href="mailto:petelooney81@gmail.com?cc=plooney81@yahoo.com&subject=Hello%20Pete!%20I%20got%20your%20contact%20information%20from%20your%20website.&body=Content" title="Email Pete" class="email">petelooney81@gmail.com</li>
+                </ul>
+            </address>
+        </footer>
+    </body>
+</html>
