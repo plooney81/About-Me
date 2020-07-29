@@ -212,6 +212,7 @@ address {
     justify-content: center; /* aligns horizontally in the middle of the entire container */
 }
 
+
 .pictures {
     padding-top: 40px;
 }
@@ -285,4 +286,8 @@ img[class^="h"] {
     width: 5vw;
     height: auto;
     margin-left: 20px;
+}
+
+.social {
+    display: flex;
 }
