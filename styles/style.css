@@ -235,11 +235,6 @@ address {
     width: 315px;
 }
 
-/* grabs a figcaption element that comes immediately after a gumbo class */
-.gumbo + figcaption {
-    text-align: left;
-}
-
 .gumbo, .gigem, .hilled, figure {
     height: 400px;
     display: inline-block;
