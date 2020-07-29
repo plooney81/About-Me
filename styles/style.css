@@ -45,6 +45,7 @@ h3 {
     position: relative;
     left: 44vw;
     font-size: 1.2em;
+    width: 40vw;
 }
 
 aside {
@@ -52,10 +53,10 @@ aside {
     top: 0;
     right: 1px;
     width: 16%;
-    margin: 0 auto; /*sets the top and bottom margin to 0, and sets left and right to auto ---This same style applies to padding as well */
+    margin: 0 auto;
     margin-top: 31px;
     background-color: white;
-    border: 5px solid #D44C35; /* width, style color --> this sets the width to 5px, the style to solid (there are multiple) and the color to black */
+    border: 5px solid #D44C35;
     border-radius: 10px;
     height: 77.25%;
 }
@@ -68,12 +69,14 @@ aside h1 {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 main {
     width: 84%;
     margin-top: 31px;
     margin-left: 0;
+    margin-right: 0;
     background-color: white;
     /* background-image: 
         url("../images/moroccan-flower.png"); */
@@ -171,9 +174,7 @@ nav {
 .line {
     border-top: .5px dotted rgb(255, 255, 255, 1);
     margin-top: 20px;
-    /* width: 100%;
-    position: relative;
-    right: 50px; */
+    width: 100%;
 }
 
 address p, address li, address a{
