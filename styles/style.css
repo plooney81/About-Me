@@ -238,11 +238,17 @@ figure, figcaption {
     display: flex;
     /* border: 1px solid black; */
     margin: 10px 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .wrapper > figure {
     flex: 1;
 }
+
+/* .last {
+    flex: 2;
+} */
 
 /* ----------------------------------------------------------- */
 /* || About me Page */
