@@ -226,19 +226,10 @@ address {
 /* || Pictures Tab */
 /* ----------------------------------------------------------- */
 
-
-.gigem {
-    width: 450px;
-}
-
-.gumbo {
-    width: 315px;
-}
-
-.gumbo, .gigem, .hilled, figure {
-    height: 400px;
+.gumbo, .gigem, .shan, figure {
+    max-height: 30vh;
+    width: auto;
     display: inline-block;
-    margin: 0 15px;
 }
 
 figure, figcaption {
@@ -246,11 +237,6 @@ figure, figcaption {
     margin: 0;
     text-align: center;
     font-size: .95em;
-}
-
-img[class="hilled"] {
-    width: 500px;
-    height: 400px;
 }
 
 /* ----------------------------------------------------------- */
