@@ -239,6 +239,16 @@ figure, figcaption {
     font-size: .95em;
 }
 
+.wrapper {
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 10px 20px;
+}
+
+.wrapper > figure {
+    flex: 1;
+}
+
 /* ----------------------------------------------------------- */
 /* || About me Page */
 /* ----------------------------------------------------------- */
