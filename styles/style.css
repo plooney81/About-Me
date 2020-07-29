@@ -4,7 +4,7 @@
 /* ----------------------------------------------------------- */
 
 html {
-    font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-size: 2vh; /* vh means viewport height, the base font size is now 2 viewport heights */
     font-family: 'Knewave', cursive;
     background-color: #646362;
     box-sizing: border-box;
@@ -16,16 +16,17 @@ html {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 8vh;
     text-align: center;
     /* gets rid of the gap at the top of the body */
     margin: 30px 20px 10px 20px;
-    padding: 10px 0;
+    padding: 5px 0;
     color: black;
     text-shadow: 1px 1px 2px white;
     background-color: #58CFED;
     border: 1px solid #646362;
     border-radius: 10px;
+
 }
 
 h2 {
@@ -36,13 +37,14 @@ h2 {
     background-color: #58CFED;
     border: 1px solid #646362;
     border-radius: 10px;
+    font-size: 1.4em;
 }
 
 h3 {
-    text-align: center;
     margin: 0;
     position: relative;
-    left: 40px;
+    left: 44vw;
+    font-size: 1.2em;
 }
 
 aside {
@@ -55,16 +57,23 @@ aside {
     background-color: white;
     border: 5px solid #D44C35; /* width, style color --> this sets the width to 5px, the style to solid (there are multiple) and the color to black */
     border-radius: 10px;
-    height: 78.85%;
+    height: 77.25%;
 }
 
 aside h1 {
-    font-size: 50px;
+    font-size: 2em;
+    min-width: 10vw;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
     width: 84%;
-    margin: 31px 160px 0px 0px; /*sets the top and bottom margin to 0, and sets left and right to auto ---This same style applies to padding as well */
+    margin-top: 31px;
+    margin-left: 0;
     background-color: white;
     /* background-image: 
         url("../images/moroccan-flower.png"); */
@@ -72,8 +81,8 @@ body {
     top-> right-> bottom-> left */
     border: 5px solid #D44C35; /* width, style color --> this sets the width to 5px, the style to solid (there are multiple) and the color to black */
     border-radius: 10px;
-
-    height: 1580px;
+    height: 77.25%;
+    /* overflow: auto; /* determines if scroll bars are needed, if so then they will pop up. */
 }
 
 img {
@@ -85,7 +94,6 @@ img {
 }
 
 p {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: .75px;
     padding: 0 20px;
@@ -163,14 +171,14 @@ nav {
 .line {
     border-top: .5px dotted rgb(255, 255, 255, 1);
     margin-top: 20px;
-    width: 1925px;
+    /* width: 100%;
     position: relative;
-    right: 50px;
+    right: 50px; */
 }
 
 address p, address li, address a{
     color: black;
-    font-size: 18px;
+    font-size: 1em;
     text-shadow: .45px .45px 1px white;
     margin: 0px;
     padding: 0px;
@@ -182,6 +190,7 @@ address p {
     padding-left: 70px;
     margin-bottom: -5px;
     text-align: center;
+    font-size: 1em;
 }
 
 address a {
@@ -190,19 +199,19 @@ address a {
 
 address img {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.2vw;
+    height: auto;
     margin-left: 10px;
     position: relative;
     top: 10px;
 }
 
 address .git{
-    height: 60px;
-    width: 45px;
+    /* width: 2.4vw; */
     position: relative;
-    top: 24px;
-    margin-left: 10px;
+    top: 2.2vh;
+    /* margin-left: 10px;
+    margin-bottom: .25vh; */
 }
 
 address {
@@ -231,12 +240,6 @@ address {
     text-align: left;
 }
 
-/* selects an image with a class that starts with an h */
-img[class^="h"] {
-    width: 700px;
-    height: 520px;
-}
-
 .gumbo, .gigem, .hilled, figure {
     height: 400px;
     display: inline-block;
@@ -256,17 +259,29 @@ img[class="hilled"] {
 }
 
 /* ----------------------------------------------------------- */
-/* || Skills Section on About me Page */
+/* || About me Page */
 /* ----------------------------------------------------------- */
 
+/* selects an image with a class that starts with an h
+img[class^="h"] {
+    width: 700px;
+    height: 520px;
+} */
+
+.hill {
+    max-width: 50%;
+    height: auto;
+}
+
 .ge , .hob , .skills{
-    margin-right: 700px;
+    /* changed to move with the viewport width */
+    width: 20vw;
     padding-right: 20px;
 }
 
 .ski img {
-    width: 50px;
-    height: 50px;
+    width: 2.5vw;
+    height: auto;
     display: inline-block;
 }
 .js {
