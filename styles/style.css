@@ -234,6 +234,8 @@ figure, figcaption {
     font-size: .95em;
 }
 
+/* flex layout practice section */
+
 .wrapper {
     display: flex;
     /* border: 1px solid black; */
@@ -245,6 +247,21 @@ figure, figcaption {
 .wrapper > figure {
     flex: 1;
 }
+
+
+.first_pic {
+    order: 0;
+}
+
+.middle {
+    order: 1;
+}
+
+.last {
+    order: -1;
+}
+
+
 
 /* .last {
     flex: 2;
